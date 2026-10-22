@@ -1,0 +1,45 @@
+/* === SAFE CIRCLE - FULL APP STYLE === */
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background:#fff5f7; min-height:100vh; }
+
+/* LOGIN PAGE */
+.login-body { display:flex; justify-content:center; align-items:center; min-height:100vh; padding:20px; background:#ffe4e9; }
+.login-card { background:white; width:100%; max-width:360px; padding:30px; border-radius:25px; border:2px solid black; box-shadow:0 10px 30px rgba(0,0,0,0.1); }
+.login-card h1 { color:#ec4899; font-size:14px; margin-bottom:10px; }
+.login-card h2 { font-size:28px; margin-bottom:5px; }
+.login-card p { color:gray; margin-bottom:20px; }
+.login-card input { width:100%; padding:14px; border:1px solid #ddd; border-radius:12px; margin-bottom:12px; font-size:14px; }
+.login-btn { width:100%; padding:14px; background:black; color:white; border:none; border-radius:12px; font-weight:bold; cursor:pointer; margin-top:10px; }
+.demo-box { margin-top:20px; background:#fff0f4; padding:12px; border-radius:10px; font-size:12px; color:gray; text-align:center; }
+
+/* --- BEAUTIFUL HOME UPGRADE - STARTS HERE --- */
+.home-body { background: linear-gradient(180deg, #ffe4e9 0%, #fff5f7 100%); display:flex; justify-content:center; padding:20px; }
+.phone-frame { background:white; width:360px; border-radius:30px; padding:25px; box-shadow: 0 10px 40px rgba(0,0,0,0.15); border: 2px solid black; }
+.step { color:#f472b6; font-size:14px; }
+.header-row { display:flex; justify-content:space-between; align-items:center; }
+.live-dot { width:24px; height:24px; background:#f8b4c4; border-radius:50%; }
+.hello { font-size:22px; margin:5px 0; }
+.safe-text { color:gray; margin-bottom:15px; }
+.trusted-card { background:#fff0f4; border:1px solid #ffd6e0; border-radius:15px; padding:15px; font-size:14px; line-height:1.5; }
+.online { color:#16a34a; font-size:12px; font-weight:bold; }
+.watching { margin-top:8px; font-size:11px; color:#ec4899; background:white; padding:5px 8px; border-radius:20px; display:inline-block; }
+
+/* BIG PULSING HEART */
+.sos-container { position:relative; display:flex; justify-content:center; align-items:center; margin:40px auto; width:200px; height:200px; }
+.sos-btn { width:160px; height:160px; background:#e11d48; color:white; border:none; border-radius:50%; font-size:32px; font-weight:900; cursor:pointer; z-index:3; box-shadow: 0 0 30px rgba(225,29,72,0.6); transition: transform 0.1s; line-height:1; }
+.sos-btn span { font-size:12px; letter-spacing:1px; display:block; margin-top:4px; }
+.sos-btn:active { transform: scale(0.92); }
+.pulse-ring, .pulse-ring2 { position:absolute; width:160px; height:160px; background:rgba(225,29,72,0.3); border-radius:50%; animation: pulse 2s infinite; z-index:1; }
+.pulse-ring2 { animation-delay: 0.8s; }
+@keyframes pulse {
+  0% { transform: scale(1); opacity:0.7; }
+  100% { transform: scale(1.8); opacity:0; }
+}
+.press-text { text-align:center; font-size:13px; margin-top:-10px; font-weight:600; }
+.location-status { text-align:center; font-size:11px; color:gray; margin-top:20px; background:#fafafa; padding:12px; border-radius:12px; line-height:1.6; }
+.location-status.sent { background:#fef2f2; border:1px solid #fecaca; color:#991b1b; font-size:12px; }
+.bottom-nav { display:flex; justify-content:space-around; margin-top:30px; padding-top:15px; border-top:1px solid #eee; }
+.nav-item { text-align:center; font-size:13px; color:gray; }
+.nav-item span { font-size:22px; display:block; }
+.nav-item.active { color:black; font-weight:900; }
+.nav-item.active span { font-size:26px; }
