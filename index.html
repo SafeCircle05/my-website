@@ -33,5 +33,26 @@
     <div class="links">Forgot password? • Secure login</div>
     <div class="footer">Protecting women in your community • Version 1.0.2</div>
   </div>
+  <div id="contactList"></div>
+<script>
+let myContacts = JSON.parse(localStorage.getItem('myContacts')) || [];
+function addContact(){
+ let name=document.getElementById('contactName').value;
+ let phone=document.getElementById('contactPhone').value;
+ if(name && phone){
+   myContacts.push({name:name, phone:phone});
+   localStorage.setItem('myContacts', JSON.stringify(myContacts));
+   alert(name+" saved!");
+   location.reload();
+ }
+}
+function showContacts(){
+ let list=document.getElementById('contactList');
+ if(list){
+  list.innerHTML = myContacts.map(c => "<p>👤 "+c.name+" - "+c.phone+"</p>").join('');
+ }
+}
+showContacts();
+</script>
 </body>
 </html>
