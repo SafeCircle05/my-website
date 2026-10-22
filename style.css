@@ -42,4 +42,4 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
 .nav-item { text-align:center; font-size:13px; color:gray; }
 .nav-item span { font-size:22px; display:block; }
 .nav-item.active { color:black; font-weight:900; }
-.nav-item.active span { font-size:26px; }
+.nav-item.active span { font-size:26px; } 
