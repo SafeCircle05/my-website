@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SafeCircle Thokoza - Home</title>
+  <style>
+    body { margin:0; font-family: Arial; background: #fff0f3; display:flex; justify-content:center; min-height:100vh; }
+    .phone { background:white; width:300px; min-height:580px; border-radius:20px; border:1.5px solid #000; margin-top:20px; padding:20px; box-sizing:border-box; position:relative; }
+    .top { display:flex; justify-content:space-between; align-items:center; }
+    .shield { color:#e68a9e; font-size:12px; }
+    h2 { margin:10px 0 0; }
+    .sub { font-size:12px; color:#666; margin:0 0 15px; }
+    .circle-box { background:#fff5f7; border-radius:10px; padding:10px; font-size:11px; text-align:left; margin-bottom:20px; border:1px solid #ffe0e6; }
+    .sos-wrap { text-align:center; margin:30px 0; }
+    .sos-btn { background:#d90429; color:white; width:110px; height:110px; border-radius:50%; border:5px solid #ffccd5; font-weight:bold; font-size:18px; cursor:pointer; box-shadow:0 0 20px rgba(217,4,41,0.3); }
+    .sos-btn:active { transform:scale(0.95); }
+    .privacy { font-size:8px; color:#888; text-align:center; margin-top:20px; }
+    .nav { display:flex; justify-content:space-around; position:absolute; bottom:10px; left:0; right:0; font-size:11px; color:#888; }
+    .nav b { color:black; }
+  </style>
+</head>
+<body>
+  <div class="phone">
+    <div class="shield">🛡️ 2. HOME</div>
+    <div class="top">
+      <h2>🏠 Home</h2>
+      <div style="width:28px;height:28px;background:#ffb3c1;border-radius:50%;"></div>
+    </div>
+    <p style="text-align:left; margin:5px 0 2px; font-weight:bold;">Hello, Thokoza</p>
+    <p class="sub">You are safe. We are here for you.</p>
+
+    <div class="circle-box">
+      <b>Your Trusted Circle:</b><br>
+      Mama, Sister, CPF Thokoza<br>
+      <span style="color:green;">● Mama - Online ● Sister - Online ● CPF Thokoza - Online</span>
+    </div>
+
+    <div class="sos-wrap">
+      <button class="sos-btn" onclick="window.location.href='sos.html'">SOS<br><span style="font-size:10px;">EMERGENCY</span></button>
+      <p style="font-size:10px; margin-top:10px;">Press to alert your trusted circle instantly</p>
+    </div>
+
+    <p class="privacy">🔒 Privacy: Your location is only shared when SOS is activated<br>End-to-end encrypted • You control who in your circle</p>
+
+    <div class="nav">
+      <span><b>🏠 Home</b></span>
+      <span>👥 Circle</span>
+      <span>⚙️ Settings</span>
+    </div>
+  </div>
+</body>
+</html>
