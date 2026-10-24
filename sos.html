@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    * { margin:0; padding:0; box-sizing:border-box; }
+  body { background:#FDE8EC; font-family: Inter, sans-serif; display:flex; justify-content:center; align-items:center; min-height:100vh; }
+  
+  .screen {
+    width: 310px; /* SMALL - fits laptop */
+    background: white;
+    border-radius: 20px;
+    padding: 16px;
+    border: 1px solid #FFD1D9;
+  }
+
+  .header { text-align:center; margin-bottom:12px; }
+  .header h3 { font-size:14px; }
+  .header p { font-size:10px; color:#888; }
+
+  .card {
+    background:white;
+    border:1px solid #E5E7EB;
+    border-radius:12px;
+    padding:10px 12px;
+    margin-bottom:10px;
+  }
+  
+  .sos-sent { display:flex; align-items:center; gap:6px; font-size:13px; font-weight:bold; }
+  .check { background:#00C853; color:white; width:16px; height:16px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:10px; }
+  .subtext { font-size:11px; color:#666; margin-left:22px; margin-top:2px; }
+
+  .location b { font-size:12px; }
+  .location p { font-size:10px; color:#888; }
+
+  .emergency { background:#FFF1F3; border-radius:12px; padding:10px 12px; margin-bottom:10px; }
+  .emergency b { font-size:12px; }
+  .emergency .number { color:#FF1744; font-size:14px; font-weight:bold; }
+  .emergency p { font-size:10px; margin-top:4px; }
+
+  .stop {
+    width:100%;
+    background:white;
+    border:1px solid #FF1744;
+    color:#FF1744;
+    padding:8px;
+    border-radius:10px;
+    font-size:12px;
+    font-weight:bold;
+    cursor:pointer;
+  }
+  
+  .footer { font-size:8px; text-align:center; color:#aaa; margin-top:8px; }
+
+  /* R19 badge on home - small */
+  .r19-badge {
+    background:#FF1744;
+    color:white;
+    font-size:9px;
+    padding:4px 8px;
+    border-radius:20px;
+    display:inline-block;
+    margin-bottom:8px;
+  }
+</style>
+</head>
+<body>
+
+<div class="screen">
+  <div class="header">
+    <h3>🛡️ SOS Active</h3>
+  </div>
+
+  <div class="card">
+    <div class="sos-sent">
+      <div class="check">✓</div>
+      SOS SENT!
+    </div>
+    <div class="subtext">Your trusted circle has been notified</div>
+  </div>
+
+  <div class="card location">
+    <p style="font-size:10px">Live location shared:</p>
+    <b>Johannesburg, Thokoza</b>
+    <p>00:12 elapsed • Online</p>
+  </div>
+
+  <div class="emergency">
+    <b>Emergency Help Line:</b><br>
+    <span class="number">0800 428 428</span>
+    <p>Police: 10111 • Ambulance: 10177</p>
+  </div>
+
+  <button class="stop" onclick="alert('SOS Stopped - You are safe')">Stop SOS</button>
+  
+  <div class="footer">Help is on the way • Stay calm, stay safe • 00:12 elapsed</div>
+</div>
+
+</body>
+</html>
