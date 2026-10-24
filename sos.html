@@ -1,60 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SafeCircle - SOS Active</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-body{margin:0;background:#FDE8EC;font-family:sans-serif;display:flex;justify-content:center;align-items:center;min-height:100vh}
-.card{width:320px;background:white;border-radius:20px;padding:16px;box-shadow:0 4px 10px rgba(0,0,0,0.1)}
-.shield{text-align:center;font-size:14px;font-weight:bold;margin-bottom:8px}
-h2{font-size:13px;color:#D81B60;margin:6px 0;text-align:center}
-.label{font-size:10px;color:#888;margin-top:8px;display:block}
-.input{width:100%;padding:8px;border:1px solid #ddd;border-radius:8px;box-sizing:border-box;font-size:11px;margin-top:3px}
-.btn{width:100%;padding:10px;background:#FF1744;color:white;border:none;border-radius:10px;font-weight:bold;margin-top:10px;cursor:pointer}
-.btn-stop{background:white;color:#FF1744;border:1px solid #FF1744;margin-top:8px}
-.footer{text-align:center;font-size:9px;color:#aaa;margin-top:12px}
-.footer a{color:#FF1744;text-decoration:none;margin:0 5px}
-.ok{color:#00A651;font-size:11px}
-.box{background:#FFF1F3;border-radius:10px;padding:10px;margin-top:10px;font-size:11px}
+body{margin:0;background:#FDE8EC;display:flex;justify-content:center;align-items:center;height:100vh;font-family:sans-serif}
+.phone{width:340px;height:520px;background:white;border-radius:20px;padding:18px;box-sizing:border-box;text-align:center;display:flex;flex-direction:column;justify-content:center;align-items:center}
+h2{color:#D81B60;font-size:14px}
+p{font-size:11px;margin:5px 0}
+.ok{color:green;font-size:11px;margin-top:10px}
+.stop{width:100%;padding:9px;background:white;color:#FF1744;border:1px solid #FF1744;border-radius:8px;margin-top:15px}
 </style>
 </head>
 <body>
-
-<div class="card">
-<div class="shield">🛡️ SafeCircle</div>
+<div class="phone">
 <h2>🚨 SOS SENT!</h2>
-
-<div class="box">
-<p>📍 <b>Live location:</b> Thokoza Park, Soweto</p>
+<p>📍 Thokoza Park, Soweto</p>
 <p>🕒 21:54 • Your circle has been alerted</p>
 <p class="ok">✓ Mama received ✓ Sister received ✓ CPF alerted</p>
+<a href="home.html" style="width:100%"><button class="stop">Stop SOS - Go Home</button></a>
 </div>
-
-<label class="label">Emergency Message</label>
-<input class="input" type="text" placeholder="Help! I need assistance at Thokoza Park" value="Help! I need assistance at Thokoza Park">
-
-<label class="label">Emergency Help Line</label>
-<input class="input" type="text" value="0800 428 428 - Police: 10111">
-
-<button class="btn" onclick="alert('SOS resent to Mama, Sister, CPF')">Resend SOS</button>
-<a href="home.html"><button class="btn btn-stop">Stop SOS - Go Home</button></a>
-
-<div class="footer">
-<a href="home.html">Home</a> | 
-<a href="index.html">Login</a> | 
-<a href="#">R19/mo Active</a>
-<p>© 2026 SafeCircle - Protecting Soweto Families</p>
-</div>
-
-</div>
-
-<script>
-console.log("SOS Active - Thokoza Park 21:54");
-</script>
-
 </body>
 </html>
-git add .
-git commit -m "full SOS structure"
-git push
